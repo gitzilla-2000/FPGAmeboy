@@ -32,8 +32,8 @@ process (I_clk)
 		when "11111000" => LD HL, SP+N
 		when "11101001" => JP HL 
 		when "11111001" => LD SP, HL
-		when "11110011" => DI
-		when "11111011" => EI
+		when "11110011" => DI (Disable Interrupts)
+		when "11111011" => EI (Enable Interrupts)
 		when "11011011" => RDC D | RD D | SDA D | SWAP D | SRL D | BIT N, D | RES N,D | SET N,D 
 		when "11--0001" => POP R	
 		when "11--0101" => PUSH R
